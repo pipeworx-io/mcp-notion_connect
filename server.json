@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/notion_connect",
+  "title": "notion_connect",
+  "description": "Notion MCP Pack",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/notion_connect",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-notion_connect",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/notion_connect/mcp"
+    }
+  ]
+}
