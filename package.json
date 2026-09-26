@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-notion_connect",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Notion MCP Pack",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-8c8767c8cbc876c1a9ccbdabb1b875dedd817a2e89894c2f1b69298603c3b77c",
-    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
+    "sourceHash": "v1-34f067e2e0b75ff24c5b865d1ed4749ed559e488ac7efb9ed6d494d1b34b0963",
+    "sourceCommit": "97740c6ee04c8acbfe7dddcacfde9e88ff2b9ca0"
   }
 }
