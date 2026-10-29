@@ -1,0 +1,108 @@
+[
+  {
+    "name": "notion_search",
+    "description": "Search your Notion workspace by keyword. Returns matching page/database titles, IDs, and types to locate content quickly.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query text"
+        },
+        "filter": {
+          "type": "string",
+          "description": "Filter by object type: \"page\" or \"database\" (optional)"
+        },
+        "page_size": {
+          "type": "number",
+          "description": "Number of results to return (default 10, max 100)"
+        },
+        "start_cursor": {
+          "type": "string",
+          "description": "Pagination cursor for next page of results"
+        }
+      }
+    }
+  },
+  {
+    "name": "notion_get_page",
+    "description": "Get a Notion page by ID. Returns full properties, metadata, and content structure for reading or editing.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "page_id": {
+          "type": "string",
+          "description": "Notion page ID (UUID format, with or without dashes)"
+        }
+      },
+      "required": [
+        "page_id"
+      ]
+    }
+  },
+  {
+    "name": "notion_get_database",
+    "description": "Get a Notion database schema by ID. Returns all properties, field types, and configuration to understand structure.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "database_id": {
+          "type": "string",
+          "description": "Notion database ID (UUID format, with or without dashes)"
+        }
+      },
+      "required": [
+        "database_id"
+      ]
+    }
+  },
+  {
+    "name": "notion_query_database",
+    "description": "Query a Notion database with filters and sorting (e.g., status='Done', sort by date). Returns matching rows with property values.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "database_id": {
+          "type": "string",
+          "description": "Notion database ID to query"
+        },
+        "filter": {
+          "type": "object",
+          "description": "Notion filter object (e.g., { \"property\": \"Status\", \"select\": { \"equals\": \"Done\" } })"
+        },
+        "sorts": {
+          "type": "array",
+          "description": "Array of sort objects (e.g., [{ \"property\": \"Created\", \"direction\": \"descending\" }])"
+        },
+        "page_size": {
+          "type": "number",
+          "description": "Number of results to return (default 10, max 100)"
+        },
+        "start_cursor": {
+          "type": "string",
+          "description": "Pagination cursor for next page of results"
+        }
+      },
+      "required": [
+        "database_id"
+      ]
+    }
+  },
+  {
+    "name": "notion_list_pages",
+    "description": "List all accessible pages in your Notion workspace. Returns titles and IDs to discover available content.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "page_size": {
+          "type": "number",
+          "description": "Number of results to return (default 10, max 100)"
+        },
+        "start_cursor": {
+          "type": "string",
+          "description": "Pagination cursor for next page of results"
+        }
+      }
+    }
+  }
+]
