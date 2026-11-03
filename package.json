@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-notion_connect",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Notion MCP Pack",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "notion_connect",
     "gatewaySlug": "notion_connect",
-    "sourceHash": "v1-932655902164442f6fdc775b30c7fd29e3cd5687085665a16b1d415c07fcb9f6",
-    "sourceCommit": "b2c4383545bb35171d0ada2beb1c9c7168ea175e"
+    "sourceHash": "v1-62b14567b8416ae0396e7e30eb7421683654ae89df655ccdbabf73f938ec1fb0",
+    "sourceCommit": "bed7faa04e7276899b5e3870ef11c98625371f2b"
   }
 }

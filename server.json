@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/notion_connect",
   "title": "Notion_connect",
   "description": "Notion MCP Pack",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "websiteUrl": "https://pipeworx.io/packs/notion_connect",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-notion_connect",
